@@ -1,0 +1,8 @@
+frappe_gen/public/js/lib/*
+frappe_gen/public/js/frappe_gen/misc/tests/*
+frappe_gen/public/js/frappe_gen/views/test_runner.js
+frappe_gen/core/doctype/doctype/boilerplate/*
+frappe_gen/core/doctype/report/boilerplate/*
+frappe_gen/public/js/frappe_gen/class.js
+frappe_gen/templates/includes/*
+frappe_gen/www/website_script.js

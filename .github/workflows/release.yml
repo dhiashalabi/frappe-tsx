@@ -1,0 +1,43 @@
+name: Generate Semantic Release
+on:
+  push:
+    branches:
+      - version-15
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+
+    steps:
+      - name: Checkout Entire Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Setup dependencies
+        run: |
+          npm install @semantic-release/git @semantic-release/exec --no-save
+
+      - name: Create Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_COMMITTER_NAME: "Frappe Gen PR Bot"
+        run: npx semantic-release
