@@ -1,10 +1,6 @@
 {
     "branches": [
         {
-            "branch": "version-15",
-            "channel": "stable"
-        },
-        {
             "name": "master",
             "channel": "stable"
         }
