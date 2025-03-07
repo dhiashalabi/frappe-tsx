@@ -1,0 +1,29 @@
+pull_request_rules:
+  - name: "Merge develop into master"
+    conditions:
+      - base: master
+        head: develop
+        allow_rebase: true
+        allow_squash: true
+        require_title: false
+        require_body: false
+        require_labels: false
+        require_status_checks: false
+        require_branch_protection: false
+        require_signatures: false
+
+  - name: "Auto-merge PRs on CI success and review approval"
+    conditions:
+      - base: master
+        head: develop
+        allow_rebase: true
+        allow_squash: true
+
+    actions:
+      - merge:
+        method: merge
+        message: "Auto-merged by Mergify"
+        strategy: rebase
+        delete_branch: true
+        rebase_strategy: rebase
+        rebase_message: "Auto-rebased by Mergify"
