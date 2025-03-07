@@ -1,8 +1,8 @@
-frappe_gen/public/js/lib/*
-frappe_gen/public/js/frappe_gen/misc/tests/*
-frappe_gen/public/js/frappe_gen/views/test_runner.js
-frappe_gen/core/doctype/doctype/boilerplate/*
-frappe_gen/core/doctype/report/boilerplate/*
-frappe_gen/public/js/frappe_gen/class.js
-frappe_gen/templates/includes/*
-frappe_gen/www/website_script.js
+frappe_tsx/public/js/lib/*
+frappe_tsx/public/js/frappe_tsx/misc/tests/*
+frappe_tsx/public/js/frappe_tsx/views/test_runner.js
+frappe_tsx/core/doctype/doctype/boilerplate/*
+frappe_tsx/core/doctype/report/boilerplate/*
+frappe_tsx/public/js/frappe_tsx/class.js
+frappe_tsx/templates/includes/*
+frappe_tsx/www/website_script.js

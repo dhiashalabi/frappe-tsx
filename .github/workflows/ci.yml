@@ -8,7 +8,7 @@ on:
   pull_request:
 
 concurrency:
-  group: develop-frappe_gen-${{ github.event.number }}
+  group: develop-frappe_tsx-${{ github.event.number }}
   cancel-in-progress: true
 
 jobs:
@@ -47,7 +47,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -76,31 +76,28 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install MariaDB Client
-        run: sudo apt-get install mariadb-client-10.6
-
       - name: Setup
         run: |
           pip install frappe-bench
           bench init --skip-redis-config-generation --skip-assets --python "$(which python)" ~/frappe-bench
-          mariadb --host 127.0.0.1 --port 3306 -u root -proot -e "SET GLOBAL character_set_server = 'utf8mb4'"
-          mariadb --host 127.0.0.1 --port 3306 -u root -proot -e "SET GLOBAL collation_server = 'utf8mb4_unicode_ci'"
+          mysql --host 127.0.0.1 --port 3306 -u root -proot -e "SET GLOBAL character_set_server = 'utf8mb4'"
+          mysql --host 127.0.0.1 --port 3306 -u root -proot -e "SET GLOBAL collation_server = 'utf8mb4_unicode_ci'"
 
       - name: Install
         working-directory: /home/runner/frappe-bench
         run: |
-          bench get-app frappe_gen $GITHUB_WORKSPACE
+          bench get-app frappe_tsx $GITHUB_WORKSPACE
           bench setup requirements --dev
           bench new-site --db-root-password root --admin-password admin test_site
-          bench --site test_site install-app frappe_gen
+          bench --site test_site install-app frappe_tsx
           bench build
         env:
-          CI: 'Yes'
+          CI: "Yes"
 
       - name: Run Tests
         working-directory: /home/runner/frappe-bench
         run: |
           bench --site test_site set-config allow_tests true
-          bench --site test_site run-tests --app frappe_gen
+          bench --site test_site run-tests --app frappe_tsx
         env:
           TYPE: server

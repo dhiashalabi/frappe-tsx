@@ -27,12 +27,12 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
           (?x)^(
-              frappe_gen/public/dist/.*|
+              frappe_tsx/public/dist/.*|
               cypress/.*|
               .*node_modules.*|
               .*boilerplate.*|
-              frappe_gen/public/js/controllers/.*|
-              frappe_gen/templates/includes/.*
+              frappe_tsx/public/js/controllers/.*|
+              frappe_tsx/templates/includes/.*
           )$
 
   - repo: https://github.com/pre-commit/mirrors-eslint
@@ -44,12 +44,12 @@ repos:
         # Ignore any files that might contain jinja / bundles
         exclude: |
           (?x)^(
-              frappe_gen/public/dist/.*|
+              frappe_tsx/public/dist/.*|
               cypress/.*|
               .*node_modules.*|
               .*boilerplate.*|
-              frappe_gen/public/js/controllers/.*|
-              frappe_gen/templates/includes/.*
+              frappe_tsx/public/js/controllers/.*|
+              frappe_tsx/templates/includes/.*
           )$
 
   - repo: https://github.com/astral-sh/ruff-pre-commit

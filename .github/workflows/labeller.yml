@@ -10,9 +10,9 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-    - name: Clone
-      uses: actions/checkout@v4
+      - name: Clone
+        uses: actions/checkout@v4
 
-    - uses: actions/labeler@v5
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"

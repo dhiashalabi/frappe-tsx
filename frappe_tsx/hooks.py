@@ -1,8 +1,8 @@
-app_name = "frappe_gen"
-app_title = "Frappe Gen"
+app_name = "frappe_tsx"
+app_title = "Frappe TSX"
 app_publisher = "DHia A. SHalabi"
 app_description = "Typescript type definition generator for Frappe DocTypes"
-app_email = "me@dhiashalabi.com"
+app_email = "hi@dhiashalabi.com"
 app_license = "mit"
 
 # Apps
@@ -13,11 +13,11 @@ app_license = "mit"
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
-# 		"name": "frappe_gen",
-# 		"logo": "/assets/frappe_gen/logo.png",
-# 		"title": "Frappe Gen",
-# 		"route": "/frappe_gen",
-# 		"has_permission": "frappe_gen.api.permission.has_app_permission"
+# 		"name": "frappe_tsx",
+# 		"logo": "/assets/frappe_tsx/logo.png",
+# 		"title": "Frappe TSX",
+# 		"route": "/frappe_tsx",
+# 		"has_permission": "frappe_tsx.api.permission.has_app_permission"
 # 	}
 # ]
 
@@ -25,15 +25,15 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/frappe_gen/css/frappe_gen.css"
-# app_include_js = "/assets/frappe_gen/js/frappe_gen.js"
+# app_include_css = "/assets/frappe_tsx/css/frappe_tsx.css"
+# app_include_js = "/assets/frappe_tsx/js/frappe_tsx.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/frappe_gen/css/frappe_gen.css"
-# web_include_js = "/assets/frappe_gen/js/frappe_gen.js"
+# web_include_css = "/assets/frappe_tsx/css/frappe_tsx.css"
+# web_include_js = "/assets/frappe_tsx/js/frappe_tsx.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "frappe_gen/public/scss/website"
+# website_theme_scss = "frappe_tsx/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -51,7 +51,7 @@ app_license = "mit"
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "frappe_gen/public/icons.svg"
+# app_include_icons = "frappe_tsx/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -75,43 +75,43 @@ app_license = "mit"
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "frappe_gen.utils.jinja_methods",
-# 	"filters": "frappe_gen.utils.jinja_filters"
+# 	"methods": "frappe_tsx.utils.jinja_methods",
+# 	"filters": "frappe_tsx.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "frappe_gen.install.before_install"
-# after_install = "frappe_gen.install.after_install"
+# before_install = "frappe_tsx.install.before_install"
+# after_install = "frappe_tsx.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "frappe_gen.uninstall.before_uninstall"
-# after_uninstall = "frappe_gen.uninstall.after_uninstall"
+# before_uninstall = "frappe_tsx.uninstall.before_uninstall"
+# after_uninstall = "frappe_tsx.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "frappe_gen.utils.before_app_install"
-# after_app_install = "frappe_gen.utils.after_app_install"
+# before_app_install = "frappe_tsx.utils.before_app_install"
+# after_app_install = "frappe_tsx.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "frappe_gen.utils.before_app_uninstall"
-# after_app_uninstall = "frappe_gen.utils.after_app_uninstall"
+# before_app_uninstall = "frappe_tsx.utils.before_app_uninstall"
+# after_app_uninstall = "frappe_tsx.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "frappe_gen.notifications.get_notification_config"
+# notification_config = "frappe_tsx.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -150,39 +150,39 @@ app_license = "mit"
 
 # scheduler_events = {
 # 	"all": [
-# 		"frappe_gen.tasks.all"
+# 		"frappe_tsx.tasks.all"
 # 	],
 # 	"daily": [
-# 		"frappe_gen.tasks.daily"
+# 		"frappe_tsx.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"frappe_gen.tasks.hourly"
+# 		"frappe_tsx.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"frappe_gen.tasks.weekly"
+# 		"frappe_tsx.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"frappe_gen.tasks.monthly"
+# 		"frappe_tsx.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "frappe_gen.install.before_tests"
+# before_tests = "frappe_tsx.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "frappe_gen.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "frappe_tsx.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "frappe_gen.task.get_dashboard_data"
+# 	"Task": "frappe_tsx.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -196,13 +196,13 @@ app_license = "mit"
 
 # Request Events
 # ----------------
-# before_request = ["frappe_gen.utils.before_request"]
-# after_request = ["frappe_gen.utils.after_request"]
+# before_request = ["frappe_tsx.utils.before_request"]
+# after_request = ["frappe_tsx.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["frappe_gen.utils.before_job"]
-# after_job = ["frappe_gen.utils.after_job"]
+# before_job = ["frappe_tsx.utils.before_job"]
+# after_job = ["frappe_tsx.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -232,7 +232,7 @@ app_license = "mit"
 # --------------------------------
 
 # auth_hooks = [
-# 	"frappe_gen.auth.validate"
+# 	"frappe_tsx.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.

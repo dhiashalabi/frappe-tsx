@@ -1,7 +1,7 @@
 [project]
-name = "frappe_gen"
+name = "frappe_tsx"
 authors = [
-    { name = "DHia A. SHalabi", email = "me@dhiashalabi.com"}
+    { name = "DHia A. SHalabi", email = "hi@dhiashalabi.com"}
 ]
 description = "Typescript type definition generator for Frappe DocTypes"
 requires-python = ">=3.10"

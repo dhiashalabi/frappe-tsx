@@ -3,29 +3,29 @@
 changelog:
   exclude:
     labels:
-      - '^build:'
-      - '^ci:'
+      - "^build:"
+      - "^ci:"
   categories:
-    - title: '🚀 Features'
+    - title: "🚀 Features"
       labels:
-        - 'feature'
-    - title: '🐛 Bug Fixes'
+        - "feature"
+    - title: "🐛 Bug Fixes"
       labels:
-        - 'fix'
-    - title: '🔨 Improvements'
+        - "fix"
+    - title: "🔨 Improvements"
       labels:
-        - 'improvement'
-    - title: '🧪 Tests'
+        - "improvement"
+    - title: "🧪 Tests"
       labels:
-        - 'test'
-    - title: '🔨 Refactor'
+        - "test"
+    - title: "🔨 Refactor"
       labels:
-        - 'refactor'
-    - title: '📝 Documentation'
+        - "refactor"
+    - title: "📝 Documentation"
       labels:
-        - 'docs'
-    - title: '🔧 Maintenance'
+        - "docs"
+    - title: "🔧 Maintenance"
       labels:
-        - 'chore'
-        - 'build'
-        - 'ci'
+        - "chore"
+        - "build"
+        - "ci"
