@@ -1,10 +1,10 @@
 {
-  "name": "frappe_tsx",
+  "name": "frappe-tsx",
   "description": "Typescript type definition generator for Frappe DocTypes",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhiashalabi/frappe_tsx.git"
+    "url": "git+https://github.com/dhiashalabi/frappe-tsx.git"
   },
   "author": "DHia A. SHalabi",
   "license": "MIT",
