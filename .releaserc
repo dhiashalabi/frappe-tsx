@@ -1,7 +1,7 @@
 {
     "branches": [
         {
-            "name": "version-15",
+            "name": "master",
             "channel": "stable"
         }
     ],
