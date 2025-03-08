@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-07 23:31:02.872705",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "generate_child_tables",
+  "column_break_sant",
+  "section_break_bfi2",
+  "apps"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "description": "It will generate TypeScript definitions for child tables included in the DocType when the <strong>Generate Child Tables</strong> checkbox field is enabled.",
+   "fieldname": "generate_child_tables",
+   "fieldtype": "Check",
+   "label": "Generate Child Tables"
+  },
+  {
+   "fieldname": "column_break_sant",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bfi2",
+   "fieldtype": "Section Break",
+   "label": "Apps"
+  },
+  {
+   "fieldname": "apps",
+   "fieldtype": "Table",
+   "label": "Apps",
+   "options": "Frappe TSX Settings App"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-03-08 10:26:24.528164",
+ "modified_by": "Administrator",
+ "module": "Frappe TSX",
+ "name": "Frappe TSX Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
